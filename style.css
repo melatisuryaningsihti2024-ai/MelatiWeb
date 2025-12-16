@@ -178,3 +178,62 @@ footer {
   background: #eaeaea;
   font-size: 14px;
 }
+
+/* ======================
+   RESPONSIVE MOBILE
+   ====================== */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column; /* ✅ TEKS DULU, FOTO SETELAH */
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  /* FOTO (samakan class dengan desktop) */
+  .hero-image {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  /* SECTION */
+  .section {
+    padding: 60px 20px;
+  }
+
+  /* PROJECT CARD */
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 14px;
+  }
+}
